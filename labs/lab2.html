@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2</title>
+  </head>
+  <body>
+    <h2>De ingevoerde namen in de array zijn:</h2>
+
+    <script>
+
+        var nameArray = new Array();
+        start();
+
+        function start(){
+            var name = prompt("Hoeveel namen wilt u in de array stoppen? (minimaal 3)");
+            if (name != "stop"){
+                nameArray.unshift(name);
+                start();
+            } else {
+                if (nameArray.length < 3){
+                    alert("Je moet minimaal 3 namen invoeren.");
+                    start();
+                }
+            }
+        }
+
+        document.write("<h2>De ingevoerde namen in de array zijn:</h2>");
+        document.write(nameArray.reverse().join(", "));
+
+        document.write("<h2>De ingevoerde namen in de array in omgekeerde volgorde zijn:</h2>")
+        document.write(nameArray.reverse().join(", "));
+
+
+    </script>
+  </body>
+</html>

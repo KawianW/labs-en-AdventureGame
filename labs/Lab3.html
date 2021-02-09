@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+</head>
+<body>
+    <script>
+
+    var arrayEen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var arrayTwee = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+    optellen(arrayEen, arrayTwee);
+    aftrekken(arrayTwee, arrayEen);
+    vermenigvuldigen(arrayEen, arrayTwee);
+    delen(arrayTwee, arrayEen);
+
+    function optellen(array1, array2){
+        document.write("<h2>Optellen van de twee arrays zijn:</h2>");
+        for (var i = 0; i < arrayEen.length; i++){
+            var uitkomst = arrayTwee[i] + arrayEen[i];
+            document.write(arrayTwee[i] + " + " + arrayEen[i] + " = " + uitkomst + "<br>");
+        }
+    }
+
+    function aftrekken(array1, array2){
+        document.write("<h2>Aftrekken van de twee arrays zijn:</h2>");
+        for (var i = 0; i < arrayEen.length; i++){
+            var uitkomst = arrayTwee[i] - arrayEen[i];
+            document.write(arrayTwee[i] + " - " + arrayEen[i] + " = " + uitkomst + "<br>");
+        }
+    }
+
+    function vermenigvuldigen(array1, array2){
+        document.write("<h2>Vermenigvuldigen van de twee arrays zijn:</h2>");
+        for (var i = 0; i < arrayEen.length; i++){
+            var uitkomst = arrayEen[i] * arrayTwee[i];
+            document.write(arrayEen[i] + " * " + arrayTwee[i] + " = " + uitkomst + "<br>");
+        }
+    }
+
+    function delen(array1, array2){
+        document.write("<h2>Delen van de twee arrays zijn:</h2>");
+        for (var i = 0; i < arrayEen.length; i++){
+            var uitkomst = arrayTwee[i] / arrayEen[i];
+            document.write(arrayTwee[i] + " / " + arrayEen[i] + " = " + uitkomst + "<br>");
+        }
+    }
+
+    </script>
+</body>
+</html>

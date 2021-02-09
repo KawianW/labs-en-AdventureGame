@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+</head>
+<body>
+    <script>
+
+        
+
+        // Opdracht 1
+        var week = [' Maandag', ' Dinsdag', ' Woensdag', ' Donderdag', ' Vrijdag', ' Zaterdag', ' Zondag'];
+        var werkWeek = [' Maandag', ' Dinsdag', ' Woensdag', ' Donderdag', ' Vrijdag']
+        // taak 1
+        document.write("<h2>Alle dagen van de week zijn: </h2>" + week);
+
+        // taak 2
+        document.write("<h2>Alle werkdagen zijn: </h2>");
+        for(w = 0; w <5; w++) {
+            document.write(week[w]);
+        }
+
+        // taak 3
+        document.write("<h2>Alle dagen van het weekend zijn: </h2>" + week[5] + week[6]);
+
+        // taak 4
+        document.write("<h2>Alle dagen van de week omgekeerd zijn: </h2>" + week.reverse());
+
+        // taak 5
+        document.write("<h2>Alle werkdagen omgekeerd zijn: </h2>" + werkWeek.reverse());
+        
+        // taak 6
+        document.write("<h2>Alle dagen van het weekend omgekeerd zijn: </h2>" + week[6] + week[5]);
+    </script>
+    
+    
+</body>
+</html>

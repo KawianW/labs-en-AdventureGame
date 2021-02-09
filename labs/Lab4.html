@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+</head>
+<body>
+    <script>
+
+        var tafel = [2, 4, 6, 8];
+        var counter = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        tafel2(tafel, counter);
+        tafel4(tafel, counter);
+        tafel6(tafel, counter);
+        tafel8(tafel, counter);
+
+        function tafel2(tafels, counters){
+            document.write("<h2>De tafel van 2 is:</h2>");
+            for (var i = 0; i < counter.length; i++){
+                var uitkomst = counter[i] * tafel[0];
+                document.write(tafel[0] + " * " + counter[i] + " = " + uitkomst + "<br>");
+            }
+        }
+
+        function tafel4(tafels, counters){
+            document.write("<h2>De tafel van 4 is:</h2>");
+            for (var i = 0; i < counter.length; i++){
+                var uitkomst = counter[i] * tafel[1];
+                document.write(tafel[1] + " * " + counter[i] + " = " + uitkomst + "<br>");
+            }
+        }
+
+        function tafel6(tafels, counters){
+            document.write("<h2>De tafel van 6 is:</h2>");
+            for (var i = 0; i < counter.length; i++){
+                var uitkomst = counter[i] * tafel[2];
+                document.write(tafel[2] + " * " + counter[i] + " = " + uitkomst + "<br>");
+            }
+        }
+
+        function tafel8(tafels, counters){
+            document.write("<h2>De tafel van 8 is:</h2>");
+            for (var i = 0; i < counter.length; i++){
+                var uitkomst = counter[i] * tafel[3];
+                document.write(tafel[3] + " * " + counter[i] + " = " + uitkomst + "<br>");
+            }
+        }
+
+    </script>
+</body>
+</html>
