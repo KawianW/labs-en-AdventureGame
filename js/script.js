@@ -125,3 +125,73 @@ function doorgaan(){
 	button1.onclick = kansloos;
 	button2.onclick = ondergang;
 }
+function kansloos(){
+	container.style.backgroundImage = spelScript[5].afbeelding;
+	title.innerHTML = spelScript[5].title;
+	title.style.color = "white";
+	console.log("Duel");
+	description.innerHTML = spelScript[5].description;
+	button1.innerHTML = "Respawn";
+	button1.onclick = opnieuw;
+	button2.style.display = "none";
+}opnieuw();
+
+function ondergang(){
+	container.style.backgroundImage = spelScript[6].afbeelding;
+	title.innerHTML = spelScript[6].title;
+	title.style.color = "white";
+	console.log("Geen duel");
+	description.innerHTML = spelScript[6].description;
+	button1.innerHTML = "Respawn";
+	button1.onclick = opnieuw;
+	button2.style.display = "none";
+}opnieuw();
+
+function oppakken(){
+	container.style.backgroundImage = spelScript[7].afbeelding;
+	title.innerHTML = spelScript[7].title;
+	console.log("Oppakken");
+	description.innerHTML = spelScript[7].description;
+    inventory.style.display = "block";
+	button1.innerHTML = "duel";
+	button2.innerHTML = "geen duel";
+	button1.onclick = duel;
+	button2.onclick = geenDuel;
+}
+
+function duel(){
+	container.style.backgroundImage = spelScript[8].afbeelding;
+	title.innerHTML = spelScript[8].title;
+	title.style.color = "white";
+	console.log("Duel");
+	description.style.display = "block";
+	description.innerHTML = spelScript[8].description;
+	button1.style.display = "block"; 
+	button1.innerHTML = "doorgaan";
+	button1.onclick = einde;
+}
+
+function einde(){
+	container.style.backgroundImage = spelScript[9].afbeelding;
+	title.innerHTML = spelScript[9].title;
+	console.log("Einde");
+	title.style.color = "white";
+	description.innerHTML = spelScript[9].description;
+	description.style.marginLeft = "650px";
+    inventory.style.display = "none";
+	button1.innerHTML = "Play again";
+	button1.onclick = function() {
+		description.style.marginLeft = "20px";
+		opnieuw();
+	}
+	button2.style.display = "none";
+}
+
+function geenDuel(){
+	container.style.backgroundImage = spelScript[10].afbeelding;
+	title.innerHTML = spelScript[10].title;
+	console.log("Geen Duel");
+	description.innerHTML = spelScript[10].description;
+	button1.innerHTML = "Respawn";
+	button2.style.display = "none";
+}opnieuw();
