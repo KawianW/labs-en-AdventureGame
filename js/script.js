@@ -246,3 +246,11 @@ function rechts(){
     button1.onclick = opnieuw;
     button2.style.display = "none";
 }opnieuw();
+
+button2.onclick = music;
+var startMusic = new Audio("audio/backgroundMusic.mp3");
+function music(){
+	console.log("Music Turned on");
+	startMusic.loop = true;
+	startMusic.play();
+}
