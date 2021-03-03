@@ -195,3 +195,54 @@ function geenDuel(){
 	button1.innerHTML = "Respawn";
 	button2.style.display = "none";
 }opnieuw();
+
+// button 2 ---------------------------------------------
+
+function weiger(){
+	container.style.backgroundImage = spelScript[11].afbeelding;
+	title.innerHTML = spelScript[11].title;
+	console.log("Game over");
+	title.style.color = "white"
+	description.style.color = "white";
+	description.innerHTML = spelScript[11].description;
+	button1.innerHTML = "opnieuw";
+	button1.onclick = opnieuw;
+	button2.style.display = "none";
+}
+
+function nacht(){
+	container.style.backgroundImage = spelScript[12].afbeelding;
+	title.innerHTML = spelScript[12].title;
+	console.log("Soort van stealth");
+	title.style.color = "white";
+	description.innerHTML = spelScript[12].description;
+	description.style.color = "white";
+	button1.innerHTML = "links";
+	button2.innerHTML = "rechts";
+	button1.onclick = links;
+	button2.onclick	= rechts;
+}
+
+function links(){
+	container.style.backgroundImage = spelScript[13].afbeelding;
+	title.innerHTML = spelScript[13].title;
+	console.log("De leider");
+	title.style.color = "white";
+	description.innerHTML = spelScript[13].description;
+	description.style.color = "white";
+	button1.innerHTML = "doorgaan";
+	button1.onclick = einde;
+	button2.style.display = "none";
+}
+
+function rechts(){
+    container.style.backgroundImage = spelScript[14].title;
+    title.innerHTML = spelScript[14].title;
+    console.log("Was nou maar naar links gegaan");
+    title.style.color = "black";
+    description.innerHTML = spelScript[14].title;
+    description.style.color = "white";
+    button1.innerHTML = "Respawn";
+    button1.onclick = opnieuw;
+    button2.style.display = "none";
+}opnieuw();
