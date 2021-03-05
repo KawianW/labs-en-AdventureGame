@@ -10,21 +10,21 @@ var sword = false;
 const afbeeldingMap = "url(" + "images" + "/";
 // hier heb ik een array gemaakt met alle titels, omschrijvingen en afbeeldingen die gebruikt worden
 const spelScript = [
-    {title: "For Honor", description:"Het spel speelt zich af in de tijd van de ridders/Vikingen en de Samoerai. Zelf zit je bij de Samoerai Factie. Het doel is om de oorlog tussen de samoerai, Vikingen en de Ridders voor altijd te beëindigen. Als je denkt dat je het aankan mag je beginnen!", afbeelding: afbeeldingMap + "beginscherm.jpg)"},
-    {title: "Samurai Fort", description: "Dit is het fort van jou factie: de Samoerai. Je word gevraagd voor het leger om ten strijden te trekken tegen de Vinkingen. Het doel is om het fort van de Vikingen te veroveren. Ga je ten strijden trekken, of weiger je het verzoek om het leger te joinen?", afbeelding: afbeeldingMap + "samuraiKasteel.jpg)"},
-    {title: "De reis", description: "Je trekt ten strijden tegen de Vikingen. Na drie lange dagen zijn jullie eindelijk in het gebied van de vikingen aangekomen. Jullie bespreken de tactiek, maar de ene helft van de troepen wilt overdag via de poort aanvallen en elke Viking afslachten die ze tegenkomen. Maar de andere helft wil 's nachts het fort binnen dringen als een soort verrassinges aanval. De leider vraagt het aan jou. Het hangt er allemaal af van wat jij kiest. Wat word het? Overdag of 's nachts", afbeelding: afbeeldingMap + "b892326be286e88083f3c025c92edef5.png)"},
-    {title: "Vechten voor de poort", description: "Het was jou keuze dus dat respecteerd iedereen. Jullie stormen op de poort af en breken hem open. Het is een hevige strijd. Je verslaat een Vinking met een hoge rang. Hij dropt zn zwaard, wil je deze oppakken of laten liggen?", afbeelding: afbeeldingMap + "army.jpg)"},
-    {title: "De confrontatie", description: "Je laat het zwaard liggen en vecht je weg door het fort totdat de leider van de Vikingen je naam roept en je uitdaagd voor een duel. Ga je dit dual aan of niet?", afbeelding: afbeeldingMap + "samuraiFight.jpg)"},
-    {title: "Duel", description: "Je vecht tegen de leider van de Vikingen. Het gaat gelijk op totdat iemand anders van de Vikingen zich er mee gaat bemoeien en met zijn bijl je hoofd eraf hakt.", afbeelding: afbeeldingMap + "viking death.jpg)"},
-    {title: "Geen duel", description: "Nu heb je de leider helemaal boos gemaakt. eerst zn fort binnen vallen en dan zijn duel afslaan. je loopt weg en je draait je om. De viking leider loopt achter je aan en hakt je door midden.", afbeelding: afbeeldingMap + "viking death.jpg)"},
-    {title: "Vechten om de poort", description: "Je kan nu twee zwaardern te gelijk gebruiken. Jullie vechten je weg door het fort totdat de leider van de Vikingen je naam roept en een duel met je wil aangaan. Ga je dit duel aan of niet?", afbeelding: afbeeldingMap + "aramusha.jpg)"},
-    {title: "Duel", description: "Je gaat het gevecht aan. Je gebruikt 1 zwaard voor dit gevecht. Het gaat gelijk op tegen de leider van de Vikingen, totdat iemand anders van de vikingen zich ermee gaat bemoeien en je probeert aan te vallen. Je trekt snel je 2e zwaard en blokkeerd deze aanval en steekt hem daarna neer. Je word boos en gaat de leider aanvallen met je 2 zwaarden. De leider is kansloos.", afbeelding: afbeeldingMap + "viking win.jpg)"},
-    {title: "Einde", description: "Het is je gelukt om het leger van de vikingen te verzwakken door hun grootste fort over te nemen. De Samurai zijn nu de strekste factie. Maar het doel om de oorlog voor altijd te beëindigen is niet gelukt. Iedereen vecht voor eer en macht en dat zal altijd zo blijven. Dus de Samoerai zijn nu wel de sterkste factie, maar wie weet of dat over een jaar nog zo is.", afbeelding: afbeeldingMap + "einde.jpg)"},
-    {title: "Geen Duel", description: "Nu heb je de leider helemaal boos gemaakt. eerst zn fort binnen vallen en dan zijn duel afslaan. je loopt weg en je draait je om. De viking leider loopt achter je aan en hakt je door midden.", afbeelding: afbeeldingMap + "viking death.jpg)"},
-    {title: "Dood", description: "De leger leider vind het niet acceptabel en executeert je ter plekke.", afbeelding: afbeeldingMap + "wejm2va3fruy.jpg)"},
-    {title: "Soort van stealth", description: "Jullie zetten een kamp op en wachten tot dat het donker word. Als het eindelijk donker is gaan jullie richting het fort. De scouts hebben een zwakke plek gevonden in de patrouille van de Vikingen. Als ze even niet opletten slaan jullie toe. ze worden compleet overlopen door ons leger. je komt bij een splitsing, waar ga je heen links of rechts?", afbeelding: afbeeldingMap + "y9aJxMGkQzaYfx93SYG2sZ-970-80.jpg)"},
-    {title: "De Leider", description: "Je slaat je weg door het fort. Je komt verschillende vijanden tegen, de een wat sterker dan de andere. Je komt aan bij het kasteel van de leider. Hij zit rustig te eten want hij weet dat het zn laatste maal zal zijn.", afbeelding: afbeeldingMap + "VikingFort.jpg)"},
-    {title: "Was nou toch maar naar links gegaan", description: "Je loopt door het fort en komt niemand meer tegen. Je gaat met je groepje uitrusten. Na een tijdje besluiten jullie om weer door te gaan. Juliie lopen door een straatje met veel zijwegen. Uit het niets komen er meer dan 20 vikingen uit de zijstraatjes, het was een val. Niemand overleefde de verrassingsaanval.", afbeelding: afbeeldingMap + "shaman-feat-2.jpg)"}
+    {button1: 1, title: "For Honor", description:"Het spel speelt zich af in de tijd van de ridders/Vikingen en de Samoerai. Zelf zit je bij de Samoerai Factie. Het doel is om de oorlog tussen de samoerai, Vikingen en de Ridders voor altijd te beëindigen. Als je denkt dat je het aankan mag je beginnen!", afbeelding: afbeeldingMap + "beginscherm.jpg)", buttonText1: "start", buttonText2: "audio"},
+    {button1: 2, button2: 11, title: "Samurai Fort", description: "Dit is het fort van jou factie: de Samoerai. Je word gevraagd voor het leger om ten strijden te trekken tegen de Vinkingen. Het doel is om het fort van de Vikingen te veroveren. Ga je ten strijden trekken, of weiger je het verzoek om het leger te joinen?", afbeelding: afbeeldingMap + "samuraiKasteel.jpg)", buttonText1: "join leger", buttonText2: "weiger"},
+    {button1: 3, button2: 12, title: "De reis", description: "Je trekt ten strijden tegen de Vikingen. Na drie lange dagen zijn jullie eindelijk in het gebied van de vikingen aangekomen. Jullie bespreken de tactiek, maar de ene helft van de troepen wilt overdag via de poort aanvallen en elke Viking afslachten die ze tegenkomen. Maar de andere helft wil 's nachts het fort binnen dringen als een soort verrassinges aanval. De leider vraagt het aan jou. Het hangt er allemaal af van wat jij kiest. Wat word het? Overdag of 's nachts", afbeelding: afbeeldingMap + "b892326be286e88083f3c025c92edef5.png)", buttonText1: "overdag", buttonText2: "nacht"},
+    {button1: 7, button2: 4, title: "Vechten voor de poort", description: "Het was jou keuze dus dat respecteerd iedereen. Jullie stormen op de poort af en breken hem open. Het is een hevige strijd. Je verslaat een Vinking met een hoge rang. Hij dropt zn zwaard, wil je deze oppakken of laten liggen?", afbeelding: afbeeldingMap + "army.jpg)", buttonText1: "oppakken", buttonText2: "doorgaan"},
+    {button1: 5, button2: 6, title: "De confrontatie", description: "Je laat het zwaard liggen en vecht je weg door het fort totdat de leider van de Vikingen je naam roept en je uitdaagd voor een duel. Ga je dit dual aan of niet?", afbeelding: afbeeldingMap + "ForHonor8.jpg)", buttonText1: "duel", buttonText2: "geen duel"},
+    {button1: 0, title: "Duel", description: "Je vecht tegen de leider van de Vikingen. Het gaat gelijk op totdat iemand anders van de Vikingen zich er mee gaat bemoeien en met zijn bijl je hoofd eraf hakt.", afbeelding: afbeeldingMap + "viking death.jpg)", buttonText1: "respawn"},
+    {button1: 0, title: "Geen duel", description: "Nu heb je de leider helemaal boos gemaakt. Eerst zijn fort binnen vallen en dan zijn duel afslaan. Je loopt weg en je draait je om. De viking leider loopt achter je aan en hakt je door midden.", afbeelding: afbeeldingMap + "viking-death.jpg)", buttonText1: "respawn"},
+    {button1: 8, button2: 10, title: "Vechten om de poort", description: "Je kan nu twee zwaarden te gelijk gebruiken. Jullie vechten je weg door het fort totdat de leider van de Vikingen je naam roept en een duel met je wil aangaan. Ga je dit duel aan of niet?", afbeelding: afbeeldingMap + "aramusha.jpg)", buttonText1: "duel", buttonText2: "geen duel"},
+    {button1: 9, title: "Duel", description: "Je gaat het gevecht aan. Je gebruikt 1 zwaard voor dit gevecht. Het gaat gelijk op tegen de leider van de Vikingen, totdat iemand anders van de vikingen zich ermee gaat bemoeien en je probeert aan te vallen. Je trekt snel je 2e zwaard en blokkeerd deze aanval en steekt hem daarna neer. Je word boos en gaat de leider aanvallen met je 2 zwaarden. De leider is kansloos.", afbeelding: afbeeldingMap + "viking-win.jpg)", buttonText1: "doorgaan"},
+    {button1: 0, title: "Einde", description: "Het is je gelukt om het leger van de vikingen te verzwakken door hun grootste fort over te nemen. De Samurai zijn nu de sterkste factie. Maar het doel om de oorlog voor altijd te beëindigen is niet gelukt. Iedereen vecht voor eer en macht en dat zal altijd zo blijven. Dus de Samoerai zijn nu wel de sterkste factie, maar wie weet of dat over een jaar nog zo is.", afbeelding: afbeeldingMap + "einde.jpg)", buttonText1: "opnieuw"},
+    {button1: 0, title: "Geen Duel", description: "Nu heb je de leider helemaal boos gemaakt. Eerst zijn fort binnen vallen en dan zijn duel afslaan. Je loopt weg en je draait je om. De viking leider loopt achter je aan en hakt je door midden.", afbeelding: afbeeldingMap + "viking-death.jpg)", buttonText1: "respawn"},
+    {button1: 0, title: "Dood", description: "De leger leider vind het niet acceptabel en executeert je ter plekke.", afbeelding: afbeeldingMap + "wejm2va3fruy.jpg)", buttonText1: "respawn"},
+    {button1: 13, button2: 14, title: "Soort van stealth", description: "Jullie zetten een kamp op en wachten tot dat het donker word. Als het eindelijk donker is gaan jullie richting het fort. De scouts hebben een zwakke plek gevonden in de patrouille van de Vikingen. Als ze even niet opletten slaan jullie toe. De Vikingen worden compleet overlopen door ons leger. Je komt bij een splitsing, waar ga je heen links of rechts?", afbeelding: afbeeldingMap + "y9aJxMGkQzaYfx93SYG2sZ-970-80.jpg)", buttonText1: "links", buttonText2: "rechts"},
+    {button1: 0, title: "De Leider", description: "Je slaat je weg door het fort. Je komt verschillende vijanden tegen, de een wat sterker dan de andere. Je komt aan bij het kasteel van de leider. Hij zit rustig te eten want hij weet dat het zn laatste maal zal zijn.", afbeelding: afbeeldingMap + "VikingFort.jpg)", buttonText1: "respawn"},
+    {button1: 0, title: "Was nou toch maar naar links gegaan", description: "Je loopt door het fort en komt niemand meer tegen. Je gaat met je groepje uitrusten. Na een tijdje besluiten jullie om weer door te gaan. Jullie lopen door een straatje met veel zijwegen. Uit het niets komen er meer dan 20 vikingen uit de zijstraatjes, het was een val. Niemand overleefde de verrassingsaanval.", afbeelding: afbeeldingMap + "shaman-feat-2.jpg)", buttonText1: "respawn"}
 ];
 
 start();
@@ -35,53 +35,50 @@ function opnieuw(){
 
 // dit is de home pagina van de game
 function start(){
-    title.innerHTML = spelScript[0].title;
+    loadScene(0);
     title.style.color = "black";
-    console.log("Start");
-    description.innerHTML = spelScript[0].description;
-    container.style.backgroundImage = spelScript[0].afbeelding;
+    console.log();
     inventory.style.display = "none";
     button1.style.display = "block";
     button2.style.display = "block";
-    button1.innerHTML = "Start";
-    button2.innerHTML = "Audio";
-    button1.onclick = onbutton1clicked;
-    button2.onclick = music;
+}
+// deze functie load de volgende scene door de volorde uit de array uit te lezen
+function loadScene(index){
+    console.log(spelScript[index].button1);
+    console.log(spelScript[index].button2);
+    container.style.backgroundImage = spelScript[index].afbeelding;
+    title.innerHTML = spelScript[index].title;
+    description.innerHTML = spelScript[index].description;
+    button1.innerHTML = spelScript[index].buttonText1;
+    button2.innerHTML = spelScript[index].buttonText2;
+
+    // bedoeling van deze functie is dat het een functie uitvoerd die niet in de array staat
+    button1.onclick = function(){
+        if(spelScript[index].button1 == 3) {
+            description.style.display = "block";
+            button1.style.display = "block";
+            button2.style.display = "block";
+            zwaard();
+        }
+        
+        loadScene(spelScript[index].button1);
+    }
+    button2.onclick = function(){
+        if(button2 == spelScript[]){
+            button2.style.display = "none";
+        }
+        loadScene(spelScript[index].button2);
+    }
 }
 
 // button 1 --------------------------------------------------------
 
-function onbutton1clicked(){
-    container.style.backgroundImage = spelScript[1].afbeelding;;
-    title.innerHTML = spelScript[1].title;
-    console.log("Samurai Fort");
-    description.innerHTML = spelScript[1].description;
-    button1.innerHTML = "Join leger";
-    button2.innerHTML = "Weiger";
-    button1.onclick = strijden;
-    button2.onclick = weiger;
-}
-
-function strijden(){
-	container.style.backgroundImage = spelScript[2].afbeelding;;
-	title.innerHTML = spelScript[2].title;
-	title.style.color = "black";
-	console.log("De reis");
-	description.innerHTML = spelScript[2].description;
-	description.style.color = "white";
-	button1.innerHTML = "overdag";
-	button2.innerHTML = "nacht";
-	button1.onclick = overdag;
-	button2.onclick = nacht;
-}
-
 function overdag(){
-	container.style.backgroundImage = spelScript[3].afbeelding;;
+	container.style.backgroundImage = spelScript[3].afbeelding;
 	title.innerHTML = spelScript[3].title;
 	title.style.color = "white";
 	console.log("Vechten voor de poort");
 	description.innerHTML = spelScript[3].description;
-	description.style.color = "white";
 	button1.innerHTML = "oppakken";
 	button2.innerHTML = "doorgaan";
 	button1.onclick = zwaard; {
@@ -103,149 +100,19 @@ function zwaard() {
 	swordImage.style.display = "block";
 	swordImage.style.margin = "0 auto";
 
-	swordImage.onclick = duel; {
+	swordImage.onclick = function() {
+        loadScene(7);
 		console.log(inventory);
+        swordImage.style.display = "none";
+        description.style.display = "block";
+        button1.style.display = "block";
+	    button2.style.display = "block";
 		inventory.style.display = "block";
 		inventory.src = "images/zwaard.jpg";
 	};
 	button1.style.display = "none";
 	button2.style.display = "none";
 }
-
-function doorgaan(){
-    swordImage.style.display = "none";
-	container.style.backgroundImage = spelScript[4].afbeelding;
-	title.innerHTML = spelScript[4].title;
-	console.log("Doorgaan");
-	title.style.color = "black";
-	description.innerHTML = spelScript[4].description;
-	description.style.color = "white";
-	button1.innerHTML = "duel";
-	button2.innerHTML = "geen duel";
-	button1.onclick = kansloos;
-	button2.onclick = ondergang;
-}
-function kansloos(){
-	container.style.backgroundImage = spelScript[5].afbeelding;
-	title.innerHTML = spelScript[5].title;
-	title.style.color = "white";
-	console.log("Duel");
-	description.innerHTML = spelScript[5].description;
-	button1.innerHTML = "Respawn";
-	button1.onclick = opnieuw;
-	button2.style.display = "none";
-}opnieuw();
-
-function ondergang(){
-	container.style.backgroundImage = spelScript[6].afbeelding;
-	title.innerHTML = spelScript[6].title;
-	title.style.color = "white";
-	console.log("Geen duel");
-	description.innerHTML = spelScript[6].description;
-	button1.innerHTML = "Respawn";
-	button1.onclick = opnieuw;
-	button2.style.display = "none";
-}opnieuw();
-
-function oppakken(){
-	container.style.backgroundImage = spelScript[7].afbeelding;
-	title.innerHTML = spelScript[7].title;
-	console.log("Oppakken");
-	description.innerHTML = spelScript[7].description;
-    inventory.style.display = "block";
-	button1.innerHTML = "duel";
-	button2.innerHTML = "geen duel";
-	button1.onclick = duel;
-	button2.onclick = geenDuel;
-}
-
-function duel(){
-	container.style.backgroundImage = spelScript[8].afbeelding;
-	title.innerHTML = spelScript[8].title;
-	title.style.color = "white";
-	console.log("Duel");
-	description.style.display = "block";
-	description.innerHTML = spelScript[8].description;
-	button1.style.display = "block"; 
-	button1.innerHTML = "doorgaan";
-	button1.onclick = einde;
-}
-
-function einde(){
-	container.style.backgroundImage = spelScript[9].afbeelding;
-	title.innerHTML = spelScript[9].title;
-	console.log("Einde");
-	title.style.color = "white";
-	description.innerHTML = spelScript[9].description;
-	description.style.marginLeft = "650px";
-    inventory.style.display = "none";
-	button1.innerHTML = "Play again";
-	button1.onclick = function() {
-		description.style.marginLeft = "20px";
-		opnieuw();
-	}
-	button2.style.display = "none";
-}
-
-function geenDuel(){
-	container.style.backgroundImage = spelScript[10].afbeelding;
-	title.innerHTML = spelScript[10].title;
-	console.log("Geen Duel");
-	description.innerHTML = spelScript[10].description;
-	button1.innerHTML = "Respawn";
-	button2.style.display = "none";
-}opnieuw();
-
-// button 2 ---------------------------------------------
-
-function weiger(){
-	container.style.backgroundImage = spelScript[11].afbeelding;
-	title.innerHTML = spelScript[11].title;
-	console.log("Game over");
-	title.style.color = "white"
-	description.style.color = "white";
-	description.innerHTML = spelScript[11].description;
-	button1.innerHTML = "opnieuw";
-	button1.onclick = opnieuw;
-	button2.style.display = "none";
-}
-
-function nacht(){
-	container.style.backgroundImage = spelScript[12].afbeelding;
-	title.innerHTML = spelScript[12].title;
-	console.log("Soort van stealth");
-	title.style.color = "white";
-	description.innerHTML = spelScript[12].description;
-	description.style.color = "white";
-	button1.innerHTML = "links";
-	button2.innerHTML = "rechts";
-	button1.onclick = links;
-	button2.onclick	= rechts;
-}
-
-function links(){
-	container.style.backgroundImage = spelScript[13].afbeelding;
-	title.innerHTML = spelScript[13].title;
-	console.log("De leider");
-	title.style.color = "white";
-	description.innerHTML = spelScript[13].description;
-	description.style.color = "white";
-	button1.innerHTML = "doorgaan";
-	button1.onclick = einde;
-	button2.style.display = "none";
-}
-
-function rechts(){
-    container.style.backgroundImage = spelScript[14].title;
-    title.innerHTML = spelScript[14].title;
-    console.log("Was nou maar naar links gegaan");
-    title.style.color = "black";
-    description.innerHTML = spelScript[14].title;
-    description.style.color = "white";
-    button1.innerHTML = "Respawn";
-    button1.onclick = opnieuw;
-    button2.style.display = "none";
-}opnieuw();
 
 button2.onclick = music;
 var startMusic = new Audio("audio/backgroundMusic.mp3");
