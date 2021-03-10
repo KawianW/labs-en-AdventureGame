@@ -1,4 +1,4 @@
-// hier haal ik de id op uit de html en heb ik globale conatanten toegevoegd
+// hier haal ik de id op uit de html en heb ik globale constanten toegevoegd
 const container = document.getElementById("game-container");
 const title = document.getElementById("title");
 const description = document.getElementById("description");
@@ -67,7 +67,7 @@ function loadScene(index){
     // deze functie zorgt ervoor dat button 2 bij bepaalde vragen weg gehaald word
     if(spelScript[index].buttonText2 == "dud"){
         button2.style.display = "none";
-    } else if(spelScript[index].buttonText2 == button2){
+    }else if(spelScript[index].buttonText2 == button2){
         button2.style.display = "block";
     }
 
@@ -76,7 +76,7 @@ function loadScene(index){
 }
 
 // Dit is het inventory item die je kan oppakken in de game
-function zwaard() {
+function zwaard(){
     sword = true;
 	container.style.backgroundImage = "none";
 	container.style.backgroundColor= "black";
@@ -89,7 +89,7 @@ function zwaard() {
 	swordImage.style.display = "block";
 	swordImage.style.margin = "0 auto";
 
-	swordImage.onclick = function() {
+	swordImage.onclick = function(){
         loadScene(7);
 		console.log(inventory);
         swordImage.style.display = "none";
@@ -98,7 +98,7 @@ function zwaard() {
 	    button2.style.display = "block";
 		inventory.style.display = "block";
 		inventory.src = "images/zwaard.jpg";
-	};
+	}
 	button1.style.display = "none";
 	button2.style.display = "none";
 }
